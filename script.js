@@ -5,7 +5,7 @@ const DEFAULT_P = {
     "Saya mengubah data menjadi insight lewat dashboard interaktif, dan membangun aplikasi web yang fungsional.",
   linkedin: "https://www.linkedin.com/in/muhamad-saefuloh-537a162b7",
   github: "https://github.com/Muhammad887654",
-  email: "emailanda@contoh.com",
+  email: "",
   about:
     "Saya senang memecah masalah rumit menjadi bagian-bagian kecil, membaca pola dari data, lalu mengubahnya menjadi keputusan yang bisa dijalankan. Lewat dashboard e-commerce dan aplikasi web yang saya bangun, saya melatih cara berpikir analitis dan pemecahan masalah dari hulu ke hilir.",
   steps: [
@@ -324,7 +324,16 @@ function setupThemeToggle() {
 }
 
 function setupContactForm() {
-  $("#send").onclick = () => {
+  const sendButton = $("#send");
+  const contactStatus = $("#contact-status");
+
+  if (!P.email) {
+    sendButton.disabled = true;
+    contactStatus.textContent = "Kontak email belum tersedia.";
+    return;
+  }
+
+  sendButton.onclick = () => {
     location.href = `mailto:${P.email}?subject=${encodeURIComponent(
       "Halo dari " + ($("#fn").value || "pengunjung"),
     )}&body=${encodeURIComponent($("#fm").value)}`;

@@ -14,7 +14,7 @@ Situs portofolio dan blog statis yang dibuat dengan HTML, CSS, dan JavaScript ta
 - `assets/` — gambar profil dan gambar latar.
 - `portfolio.xml`, `blog.xml` — data XML terpisah.
 - `blogger-template.xml` — template tema Blogger; unggah dari menu **Tema** di Blogger.
-- `blogger-posts.xml` — feed Atom contoh artikel. URL `example.com` dan email placeholder perlu diganti; format ini belum tentu bisa langsung diimpor sebagai cadangan Blogger.
+- `blogger-posts.xml` — feed Atom contoh artikel. URL `example.com` perlu diganti; format ini belum tentu bisa langsung diimpor sebagai cadangan Blogger.
 - `wordpress.xml` — berkas WXR untuk proses impor WordPress; periksa dan ganti metadata placeholder sebelum impor.
 
 File dipertahankan di root agar tautan relatif situs dan konfigurasi GitHub Pages tetap sederhana.
@@ -38,4 +38,4 @@ Kemudian buka <http://localhost:8000>.
 
 ## Memperbarui konten
 
-Perbarui `site-data.xml` untuk data situs. `script.js` menyediakan konten cadangan jika XML tidak dapat dimuat. Untuk publikasi Blogger dan WordPress, gunakan berkas ekspor terkait dan sesuaikan URL, email, serta metadata dengan situs tujuan.
+Perbarui `site-data.xml` untuk data situs. `script.js` menyediakan konten cadangan jika XML tidak dapat dimuat. Untuk publikasi Blogger dan WordPress, gunakan berkas ekspor terkait dan sesuaikan URL serta metadata dengan situs tujuan.
