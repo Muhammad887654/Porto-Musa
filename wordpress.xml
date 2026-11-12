@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/">
+
+  <channel>
+    <title>Blog Muhamad Saefuloh</title>
+    <link>https://example.com</link>
+    <description>Catatan tentang data, analisis, pengembangan web, dan pengalaman belajar di dunia teknologi.</description>
+    <pubDate>Thu, 12 Nov 2026 10:58:00 +0000</pubDate>
+    <language>id-ID</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://example.com</wp:base_site_url>
+    <wp:base_blog_url>https://example.com</wp:base_blog_url>
+
+    <wp:author>
+      <wp:author_login>muhamadsaefuloh</wp:author_login>
+      <wp:author_email>admin@example.com</wp:author_email>
+      <wp:author_display_name><![CDATA[Muhamad Saefuloh]]></wp:author_display_name>
+      <wp:author_first_name><![CDATA[Muhamad]]></wp:author_first_name>
+      <wp:author_last_name><![CDATA[Saefuloh]]></wp:author_last_name>
+      <wp:author_role>administrator</wp:author_role>
+    </wp:author>
+
+    <wp:category>
+      <wp:term_id>1</wp:term_id>
+      <wp:category_nicename>data-analytics</wp:category_nicename>
+      <wp:cat_name><![CDATA[Data Analytics]]></wp:cat_name>
+      <wp:category_parent></wp:category_parent>
+    </wp:category>
+
+    <wp:category>
+      <wp:term_id>2</wp:term_id>
+      <wp:category_nicename>web-development</wp:category_nicename>
+      <wp:cat_name><![CDATA[Web Development]]></wp:cat_name>
+      <wp:category_parent></wp:category_parent>
+    </wp:category>
+
+    <wp:category>
+      <wp:term_id>3</wp:term_id>
+      <wp:category_nicename>produktifitas</wp:category_nicename>
+      <wp:cat_name><![CDATA[Produktivitas]]></wp:cat_name>
+      <wp:category_parent></wp:category_parent>
+    </wp:category>
+
+    <item>
+      <title>Membangun Dashboard yang Bermanfaat</title>
+      <link>https://example.com/membangun-dashboard-yang-bermanfaat/</link>
+      <pubDate>Thu, 12 Nov 2026 10:58:00 +0000</pubDate>
+      <dc:creator><![CDATA[Muhamad Saefuloh]]></dc:creator>
+      <guid isPermaLink="false">https://example.com/?p=1</guid>
+      <description><![CDATA[Dashboard bukan hanya soal tampilan, tetapi soal membantu orang mengambil keputusan yang lebih cepat dan tepat.]]></description>
+      <content:encoded><![CDATA[<p>Dashboard yang baik harus membantu pengguna memahami kondisi saat ini, melihat pola, dan mengambil tindakan. Saat merancang dashboard, saya biasanya mulai dari pertanyaan bisnis: apa yang ingin diketahui pengguna? Setelah itu, saya memilih metrik yang relevan, menjaga visualisasi tetap sederhana, dan menempatkan insight di posisi yang paling cepat dibaca.</p>
+<p>Di banyak proyek, kesalahan terbesar bukan pada chart atau teknis, tetapi pada fokus. Jika dashboard menampilkan terlalu banyak informasi, orang akan kesulitan menemukan jawaban. Karena itu, saya lebih memilih tampilan yang bersih, hierarki yang jelas, dan narasi yang dapat dibaca dengan cepat.</p>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Dashboard bukan hanya soal tampilan, tetapi soal membantu orang mengambil keputusan yang lebih cepat dan tepat.]]></excerpt:encoded>
+      <wp:post_id>1</wp:post_id>
+      <wp:post_date>2026-11-12 10:58:00</wp:post_date>
+      <wp:post_date_gmt>2026-11-12 10:58:00</wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:ping_status>open</wp:ping_status>
+      <wp:post_name>membangun-dashboard-yang-bermanfaat</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category><![CDATA[Data Analytics]]></category>
+      <category domain="post_tag"><![CDATA[dashboard]]></category>
+      <category domain="post_tag"><![CDATA[python]]></category>
+      <category domain="post_tag"><![CDATA[streamlit]]></category>
+    </item>
+
+    <item>
+      <title>Tips Menulis Query Data yang Rapi</title>
+      <link>https://example.com/tips-menulis-query-data-yang-rapi/</link>
+      <pubDate>Mon, 21 Oct 2026 10:58:00 +0000</pubDate>
+      <dc:creator><![CDATA[Muhamad Saefuloh]]></dc:creator>
+      <guid isPermaLink="false">https://example.com/?p=2</guid>
+      <description><![CDATA[Menulis query yang bersih membuat analisis lebih cepat, mudah diulang, dan lebih mudah dipahami tim.]]></description>
+      <content:encoded><![CDATA[<p>Saat bekerja dengan data, saya selalu memastikan query yang saya tulis memiliki struktur yang mudah dibaca. Biasanya saya memisahkan bagian utama seperti select, from, where, group by, dan order by secara rapi. Ini membantu saat revisi atau saat teman lain membaca hasil analisis saya.</p>
+<p>Selain itu, saya juga lebih suka memberi nama kolom yang jelas, menghindari pengulangan logika, dan menuliskan filter dengan tujuan tertentu. Hal-hal kecil ini terasa sederhana, tetapi sangat membantu ketika dataset mulai berkembang dan semakin kompleks.</p>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Menulis query yang bersih membuat analisis lebih cepat, mudah diulang, dan lebih mudah dipahami tim.]]></excerpt:encoded>
+      <wp:post_id>2</wp:post_id>
+      <wp:post_date>2026-10-21 10:58:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-21 10:58:00</wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:ping_status>open</wp:ping_status>
+      <wp:post_name>tips-menulis-query-data-yang-rapi</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category><![CDATA[Data Analytics]]></category>
+      <category domain="post_tag"><![CDATA[sql]]></category>
+      <category domain="post_tag"><![CDATA[data-cleaning]]></category>
+      <category domain="post_tag"><![CDATA[analysis]]></category>
+    </item>
+
+    <item>
+      <title>Cara Memecah Masalah Programming dengan Lebih Mudah</title>
+      <link>https://example.com/cara-memecah-masalah-programming/</link>
+      <pubDate>Mon, 15 Sep 2026 10:58:00 +0000</pubDate>
+      <dc:creator><![CDATA[Muhamad Saefuloh]]></dc:creator>
+      <guid isPermaLink="false">https://example.com/?p=3</guid>
+      <description><![CDATA[Proses pemecahan masalah yang sistematis membuat solusi lebih cepat ditemukan dan lebih mudah dipelihara.]]></description>
+      <content:encoded><![CDATA[<p>Ketika menghadapi bug atau fitur baru, saya biasanya tidak langsung menulis kode. Langkah pertama adalah memecah masalah menjadi bagian-bagian kecil: input apa yang diterima, apa yang diharapkan, dan di mana proses gagal.</p>
+<p>Setelah itu, saya mencari sumber penyebabnya satu per satu. Seringkali solusi yang paling efektif muncul ketika saya fokus pada alur logika, bukan hanya mencoba mengubah kode secara acak. Pendekatan ini membuat proses debugging lebih efisien dan hasil akhirnya lebih konsisten.</p>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Proses pemecahan masalah yang sistematis membuat solusi lebih cepat ditemukan dan lebih mudah dipelihara.]]></excerpt:encoded>
+      <wp:post_id>3</wp:post_id>
+      <wp:post_date>2026-09-15 10:58:00</wp:post_date>
+      <wp:post_date_gmt>2026-09-15 10:58:00</wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:ping_status>open</wp:ping_status>
+      <wp:post_name>cara-memecah-masalah-programming</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category><![CDATA[Web Development]]></category>
+      <category domain="post_tag"><![CDATA[web]]></category>
+      <category domain="post_tag"><![CDATA[problem-solving]]></category>
+      <category domain="post_tag"><![CDATA[javascript]]></category>
+    </item>
+
+    <item>
+      <title>Belajar Menjadi Lebih Bersabar dalam Masa Belajar</title>
+      <link>https://example.com/belajar-menjadi-lebih-bersabar-dalam-masa-belajar/</link>
+      <pubDate>Mon, 05 Aug 2026 10:58:00 +0000</pubDate>
+      <dc:creator><![CDATA[Muhamad Saefuloh]]></dc:creator>
+      <guid isPermaLink="false">https://example.com/?p=4</guid>
+      <description><![CDATA[Belajar teknologi adalah proses yang panjang. Kesabaran adalah kunci agar proses tetap konsisten dan tidak cepat menyerah.]]></description>
+      <content:encoded><![CDATA[<p>Dalam dunia teknologi, tidak semua konsep dipahami dengan cepat. Kadang ada hari di mana semua terasa sulit, dan ada juga saat semuanya terasa lancar. Saya belajar untuk tidak menilai diri sendiri hanya dari kemajuan yang terlihat dalam satu minggu.</p>
+<p>Yang paling penting adalah konsistensi: latihan kecil setiap hari, membaca ulang materi, dan membangun proyek sederhana. Dengan begitu, kemampuan akan berkembang secara bertahap dan lebih tahan lama.</p>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Belajar teknologi adalah proses yang panjang. Kesabaran adalah kunci agar proses tetap konsisten dan tidak cepat menyerah.]]></excerpt:encoded>
+      <wp:post_id>4</wp:post_id>
+      <wp:post_date>2026-08-05 10:58:00</wp:post_date>
+      <wp:post_date_gmt>2026-08-05 10:58:00</wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:ping_status>open</wp:ping_status>
+      <wp:post_name>belajar-menjadi-lebih-bersabar-dalam-masa-belajar</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category><![CDATA[Produktivitas]]></category>
+      <category domain="post_tag"><![CDATA[belajar]]></category>
+      <category domain="post_tag"><![CDATA[growth]]></category>
+      <category domain="post_tag"><![CDATA[mindset]]></category>
+    </item>
+  </channel>
+</rss>

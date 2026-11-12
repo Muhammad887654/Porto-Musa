@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Muhamad Saefuloh</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg-soft: #131b2d;
+        --card: #121a2b;
+        --text: #edf2ff;
+        --muted: #a6b4d3;
+        --accent: #7c9dff;
+        --accent-2: #5eead4;
+        --border: rgba(166,180,211,0.18);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top left, rgba(124,157,255,0.18), transparent 28%), var(--bg);
+        color: var(--text);
+        font: 16px/1.7 'Segoe UI', Arial, sans-serif;
+      }
+
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { color: var(--accent-2); }
+      .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(11,16,32,0.75);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-inner {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        color: var(--muted);
+      }
+
+      .hero {
+        padding: 60px 0 28px;
+      }
+
+      .hero-box {
+        background: linear-gradient(135deg, rgba(124,157,255,0.14), rgba(94,234,212,0.08));
+        border: 1px solid var(--border);
+        border-radius: 26px;
+        padding: 40px 32px;
+      }
+
+      .eyebrow {
+        color: var(--accent-2);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 14px 0 12px;
+        font-size: clamp(2.3rem, 4vw, 4rem);
+        line-height: 1.08;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 2.2fr) minmax(220px, 0.8fr);
+        gap: 28px;
+        padding: 8px 0 50px;
+      }
+
+      .post-list {
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: rgba(18,26,43,0.9);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 24px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: clamp(1.4rem, 2vw, 2rem);
+      }
+
+      .meta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .summary {
+        color: var(--muted);
+        margin: 16px 0 0;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .tag {
+        background: rgba(124,157,255,0.12);
+        color: var(--accent-2);
+        border: 1px solid rgba(124,157,255,0.24);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.72rem;
+      }
+
+      .side {
+        display: grid;
+        gap: 20px;
+      }
+
+      .panel {
+        background: rgba(18,26,43,0.9);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      .panel h3 {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .panel ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+
+      .panel li {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+      }
+
+      .panel li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 22px 0 42px;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      @media (max-width: 860px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="brand">Muhamad Saefuloh</div>
+        <nav class="nav" aria-label="Menu utama">
+          <a href="index.html">Portfolio</a>
+          <a href="#posts">Artikel</a>
+          <a href="#topics">Topik</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="eyebrow">Blog &amp; Insight</div>
+          <h1>Catatan, analisis, dan ide yang saya tulis.</h1>
+          <p class="lead">Saya menulis tentang dashboard, data, pengembangan web, dan proses belajar yang membantu saya tumbuh di dunia teknologi.</p>
+        </div>
+      </div>
+    </section>
+
+    <main class="container grid">
+      <section id="posts" class="post-list" aria-live="polite"></section>
+
+      <aside class="side" id="topics">
+        <div class="panel">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="index.html">Kembali ke Portfolio</a></li>
+            <li><a href="#posts">Semua Artikel</a></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Topik</h3>
+          <ul>
+            <li>Dashboard</li>
+            <li>Data Analysis</li>
+            <li>Python</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>© 2026 Muhamad Saefuloh · Dibuat dengan semangat ✨</footer>
+
+    <script src="data-loader.js"></script>
+    <script>
+      const fallbackPosts = [
+        {
+          title: 'Membangun Dashboard yang Bermanfaat',
+          summary: 'Dashboard bukan hanya soal tampilan, tetapi soal membantu orang mengambil keputusan yang lebih cepat dan tepat.',
+          category: 'Data Analytics',
+          readTime: '5 menit',
+          published: '2026-11-12',
+          tags: ['dashboard', 'python', 'streamlit']
+        },
+        {
+          title: 'Tips Menulis Query Data yang Rapi',
+          summary: 'Menulis query yang bersih membuat analisis lebih cepat, mudah diulang, dan lebih mudah dipahami tim.',
+          category: 'Data Analytics',
+          readTime: '4 menit',
+          published: '2026-10-21',
+          tags: ['sql', 'data-cleaning', 'analysis']
+        },
+        {
+          title: 'Cara Memecah Masalah Programming dengan Lebih Mudah',
+          summary: 'Proses pemecahan masalah yang sistematis membuat solusi lebih cepat ditemukan dan lebih mudah dipelihara.',
+          category: 'Web Development',
+          readTime: '6 menit',
+          published: '2026-09-15',
+          tags: ['web', 'problem-solving', 'javascript']
+        }
+      ];
+
+      async function renderBlogPosts() {
+        const target = document.getElementById('posts');
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('post');
+        let posts = fallbackPosts;
+
+        try {
+          if (window.loadSiteData) {
+            const data = await window.loadSiteData();
+            if (data && data.blog && data.blog.posts && data.blog.posts.length) {
+              posts = data.blog.posts;
+            }
+          }
+        } catch (error) {
+          console.warn('XML fetch failed, using fallback posts.', error);
+        }
+
+        if (slug) {
+          const post = posts.find((item) => (item.slug || '').toLowerCase() === slug.toLowerCase()) || posts[0];
+          document.title = `${post.title} | Blog Muhamad Saefuloh`;
+          target.innerHTML = `
+            <article class="card">
+              <div class="meta">
+                <span>${post.category || 'Umum'}</span>
+                <span>•</span>
+                <span>${post.published || post.date || '2026'}</span>
+                <span>•</span>
+                <span>${post.readTime || '5 menit'}</span>
+              </div>
+              <h2>${post.title}</h2>
+              <div class="tags">
+                ${(post.tags || []).map((tag) => `<span class="tag">#${tag}</span>`).join('')}
+              </div>
+              <div class="article-body">${post.content || post.summary || ''}</div>
+              <p><a href="blog.html">← Kembali ke semua artikel</a></p>
+            </article>
+          `;
+          return;
+        }
+
+        target.innerHTML = posts.map((post) => `
+          <article class="card">
+            <div class="meta">
+              <span>${post.category || 'Umum'}</span>
+              <span>•</span>
+              <span>${post.published || post.date || '2026'}</span>
+              <span>•</span>
+              <span>${post.readTime || '5 menit'}</span>
+            </div>
+            <h2>${post.title}</h2>
+            <p class="summary">${post.summary || post.description || ''}</p>
+            <div class="tags">
+              ${(post.tags || []).map((tag) => `<span class="tag">#${tag}</span>`).join('')}
+            </div>
+            <p><a href="blog.html?post=${post.slug || post.title.toLowerCase().replace(/\s+/g, '-')}" aria-label="Baca ${post.title}">Baca artikel →</a></p>
+          </article>
+        `).join('');
+      }
+
+      renderBlogPosts();
+    </script>
+  </body>
+</html>

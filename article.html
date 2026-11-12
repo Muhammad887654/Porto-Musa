@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artikel | Blog Muhamad Saefuloh</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg-soft: #131b2d;
+        --card: #121a2b;
+        --text: #edf2ff;
+        --muted: #a6b4d3;
+        --accent: #7c9dff;
+        --accent-2: #5eead4;
+        --border: rgba(166,180,211,0.18);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top left, rgba(124,157,255,0.18), transparent 28%), var(--bg);
+        color: var(--text);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        line-height: 1.7;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { color: var(--accent-2); }
+      .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+      header {
+        position: sticky;
+        top: 0;
+        background: rgba(11,16,32,0.8);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .header-inner {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-shell {
+        padding: 46px 0 60px;
+      }
+      .article-card {
+        background: rgba(18,26,43,0.9);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 28px;
+      }
+      .meta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+      h1 {
+        margin: 14px 0 10px;
+        font-size: clamp(2rem, 3vw, 3rem);
+        line-height: 1.1;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+      .tag {
+        font-size: 0.72rem;
+        color: var(--accent-2);
+        background: rgba(124,157,255,0.12);
+        border: 1px solid rgba(124,157,255,0.24);
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+      .article-body {
+        color: var(--text);
+      }
+      .article-body p {
+        margin: 0 0 18px;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 18px;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 22px 0 46px;
+        text-align: center;
+        color: var(--muted);
+      }
+      @media (max-width:640px) {
+        .article-card { padding: 22px 18px; }
+        .header-inner { flex-direction: column; justify-content: center; padding: 12px 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="brand">Muhamad Saefuloh</div>
+        <nav><a href="blog.html">← Kembali ke Blog</a></nav>
+      </div>
+    </header>
+
+    <main class="container article-shell">
+      <article class="article-card" id="article-root"></article>
+    </main>
+
+    <footer>© 2026 Muhamad Saefuloh · Dibuat dengan semangat ✨</footer>
+
+    <script src="data-loader.js"></script>
+    <script>
+      const fallbackPosts = [
+        {
+          title: 'Membangun Dashboard yang Bermanfaat',
+          summary: 'Dashboard bukan hanya soal tampilan, tetapi soal membantu orang mengambil keputusan yang lebih cepat dan tepat.',
+          category: 'Data Analytics',
+          readTime: '5 menit',
+          published: '2026-11-12',
+          slug: 'membangun-dashboard-yang-bermanfaat',
+          tags: ['dashboard', 'python', 'streamlit'],
+          content: '<p>Dashboard yang baik harus membantu pengguna memahami kondisi saat ini, melihat pola, dan mengambil tindakan.</p><p>Setelah itu, saya memilih metrik yang relevan...</p>'
+        },
+        {
+          title: 'Tips Menulis Query Data yang Rapi',
+          summary: 'Menulis query yang bersih membuat analisis lebih cepat, mudah diulang, dan lebih mudah dipahami tim.',
+          category: 'Data Analytics',
+          readTime: '4 menit',
+          published: '2026-10-21',
+          slug: 'tips-menulis-query-data-yang-rapi',
+          tags: ['sql', 'data-cleaning', 'analysis'],
+          content: '<p>Saat bekerja dengan data, saya selalu memastikan query yang saya tulis memiliki struktur yang mudah dibaca.</p>'
+        }
+      ];
+
+      async function renderArticle() {
+        const root = document.getElementById('article-root');
+        const params = new URLSearchParams(window.location.search);
+        const slug = (params.get('post') || '').toLowerCase();
+        let posts = fallbackPosts;
+
+        try {
+          if (window.loadSiteData) {
+            const data = await window.loadSiteData();
+            if (data && data.blog && data.blog.posts && data.blog.posts.length) {
+              posts = data.blog.posts;
+            }
+          }
+        } catch (error) {
+          console.warn('XML load failed, using fallback article data.', error);
+        }
+
+        const post = posts.find((item) => (item.slug || '').toLowerCase() === slug) || posts[0];
+
+        root.innerHTML = `
+          <div class="meta">
+            <span>${post.category || 'Umum'}</span>
+            <span>•</span>
+            <span>${post.published || post.date || '2026'}</span>
+            <span>•</span>
+            <span>${post.readTime || '5 menit'}</span>
+          </div>
+          <h1>${post.title}</h1>
+          <div class="tags">
+            ${(post.tags || []).map((tag) => `<span class="tag">#${tag}</span>`).join('')}
+          </div>
+          <div class="article-body">${post.content || post.summary || ''}</div>
+          <a class="back-link" href="blog.html">← Kembali ke semua artikel</a>
+        `;
+
+        document.title = `${post.title} | Blog Muhamad Saefuloh`;
+      }
+
+      renderArticle();
+    </script>
+  </body>
+</html>

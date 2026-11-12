@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Muhamad Saefuloh</title>
+  <subtitle>Catatan tentang data, analisis, pengembangan web, dan pengalaman belajar di dunia teknologi.</subtitle>
+  <link href="https://example.com/" rel="alternate"/>
+  <link href="https://example.com/feed.xml" rel="self"/>
+  <updated>2026-11-12T11:00:00Z</updated>
+  <id>https://example.com/blog</id>
+  <author>
+    <name>Muhamad Saefuloh</name>
+    <email>admin@example.com</email>
+  </author>
+
+  <entry>
+    <id>https://example.com/post/membangun-dashboard-yang-bermanfaat</id>
+    <title>Membangun Dashboard yang Bermanfaat</title>
+    <published>2026-11-12T10:58:00Z</published>
+    <updated>2026-11-12T10:58:00Z</updated>
+    <summary>Dashboard bukan hanya soal tampilan, tetapi soal membantu orang mengambil keputusan yang lebih cepat dan tepat.</summary>
+    <content type="html"><![CDATA[
+      <p>Dashboard yang baik harus membantu pengguna memahami kondisi saat ini, melihat pola, dan mengambil tindakan. Saat merancang dashboard, saya biasanya mulai dari pertanyaan bisnis: apa yang ingin diketahui pengguna?</p>
+      <p>Setelah itu, saya memilih metrik yang relevan, menjaga visualisasi tetap sederhana, dan menempatkan insight di posisi yang paling cepat dibaca.</p>
+      <p>Di banyak proyek, kesalahan terbesar bukan pada chart atau teknis, tetapi pada fokus. Jika dashboard menampilkan terlalu banyak informasi, orang akan kesulitan menemukan jawaban.</p>
+    ]]></content>
+    <category term="Data Analytics"/>
+    <category term="dashboard"/>
+    <category term="python"/>
+    <category term="streamlit"/>
+  </entry>
+
+  <entry>
+    <id>https://example.com/post/tips-menulis-query-data-yang-rapi</id>
+    <title>Tips Menulis Query Data yang Rapi</title>
+    <published>2026-10-21T10:58:00Z</published>
+    <updated>2026-10-21T10:58:00Z</updated>
+    <summary>Menulis query yang bersih membuat analisis lebih cepat, mudah diulang, dan lebih mudah dipahami tim.</summary>
+    <content type="html"><![CDATA[
+      <p>Saat bekerja dengan data, saya selalu memastikan query yang saya tulis memiliki struktur yang mudah dibaca. Biasanya saya memisahkan bagian utama seperti select, from, where, group by, dan order by secara rapi.</p>
+      <p>Ini membantu saat revisi atau saat teman lain membaca hasil analisis saya. Selain itu, saya juga lebih suka memberi nama kolom yang jelas dan menuliskan filter dengan tujuan tertentu.</p>
+    ]]></content>
+    <category term="Data Analytics"/>
+    <category term="sql"/>
+    <category term="data-cleaning"/>
+    <category term="analysis"/>
+  </entry>
+
+  <entry>
+    <id>https://example.com/post/cara-memecah-masalah-programming</id>
+    <title>Cara Memecah Masalah Programming dengan Lebih Mudah</title>
+    <published>2026-09-15T10:58:00Z</published>
+    <updated>2026-09-15T10:58:00Z</updated>
+    <summary>Proses pemecahan masalah yang sistematis membuat solusi lebih cepat ditemukan dan lebih mudah dipelihara.</summary>
+    <content type="html"><![CDATA[
+      <p>Ketika menghadapi bug atau fitur baru, saya biasanya tidak langsung menulis kode. Langkah pertama adalah memecah masalah menjadi bagian-bagian kecil: input apa yang diterima, apa yang diharapkan, dan di mana proses gagal.</p>
+      <p>Setelah itu, saya mencari sumber penyebabnya satu per satu. Seringkali solusi yang paling efektif muncul ketika saya fokus pada alur logika, bukan hanya mencoba mengubah kode secara acak.</p>
+    ]]></content>
+    <category term="Web Development"/>
+    <category term="web"/>
+    <category term="problem-solving"/>
+    <category term="javascript"/>
+  </entry>
+</feed>

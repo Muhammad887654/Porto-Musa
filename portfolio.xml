@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+  <profile>
+    <name>Muhamad Saefuloh</name>
+    <roles>
+      <role>Data Analyst</role>
+      <role>Web Developer</role>
+      <role>Dashboard Builder</role>
+      <role>Problem Solver</role>
+    </roles>
+    <tagline>Saya mengubah data menjadi insight lewat dashboard interaktif, dan membangun aplikasi web yang fungsional.</tagline>
+    <linkedin>https://www.linkedin.com/in/muhamad-saefuloh-537a162b7</linkedin>
+    <github>https://github.com/Muhammad887654</github>
+    <email>emailanda@contoh.com</email>
+    <about>
+      Saya senang memecah masalah rumit menjadi bagian-bagian kecil, membaca pola dari data, lalu mengubahnya menjadi keputusan yang bisa dijalankan. Lewat dashboard e-commerce dan aplikasi web yang saya bangun, saya melatih cara berpikir analitis dan pemecahan masalah dari hulu ke hilir.
+    </about>
+  </profile>
+
+  <highlights>
+    <stat>
+      <value>3</value>
+      <label>Proyek</label>
+    </stat>
+    <stat>
+      <value>Python</value>
+      <label>Data &amp; Dashboard</label>
+    </stat>
+    <stat>
+      <value>Node.js</value>
+      <label>Web Backend</label>
+    </stat>
+    <stat>
+      <value>Docker</value>
+      <label>Deployment</label>
+    </stat>
+  </highlights>
+
+  <process>
+    <step>
+      <number>01</number>
+      <title>Pahami Masalah</title>
+      <description>Merumuskan pertanyaan dan tujuan yang jelas.</description>
+    </step>
+    <step>
+      <number>02</number>
+      <title>Olah Data</title>
+      <description>Membersihkan dan menyusun data agar siap dianalisis.</description>
+    </step>
+    <step>
+      <number>03</number>
+      <title>Temukan Insight</title>
+      <description>Membaca tren dan pola lewat visualisasi.</description>
+    </step>
+    <step>
+      <number>04</number>
+      <title>Ambil Solusi</title>
+      <description>Menerjemahkan temuan menjadi tindakan nyata.</description>
+    </step>
+  </process>
+
+  <skills>
+    <skill level="80">
+      <name>Python &amp; Data Analysis</name>
+    </skill>
+    <skill level="80">
+      <name>Dashboard (Streamlit)</name>
+    </skill>
+    <skill level="70">
+      <name>Node.js</name>
+    </skill>
+    <skill level="65">
+      <name>Database / Supabase</name>
+    </skill>
+    <skill level="60">
+      <name>Docker</name>
+    </skill>
+    <skill level="75">
+      <name>Git &amp; GitHub</name>
+    </skill>
+  </skills>
+
+  <projects>
+    <project category="Data">
+      <title>Dashboard E-Commerce</title>
+      <description>Dashboard Streamlit untuk memvisualisasikan data e-commerce: tren penjualan, kategori produk teratas, status pesanan, lokasi pelanggan, tren pendapatan, skor ulasan, dan waktu pengiriman. Dikemas dengan Docker.</description>
+      <tags>
+        <tag>Python</tag>
+        <tag>Streamlit</tag>
+        <tag>Docker</tag>
+      </tags>
+      <links>
+        <link label="Lihat kode di GitHub">https://github.com/Muhammad887654/Dasboard-E-comerce</link>
+      </links>
+    </project>
+
+    <project category="Web">
+      <title>QAF Blog</title>
+      <description>Blog dengan registrasi email dan password, profil akun, serta postingan privat anggota. Dilengkapi antarmuka QAF Berbagi untuk kampanye donasi, unggah bukti, dan panel bendahara dengan Supabase.</description>
+      <tags>
+        <tag>Node.js</tag>
+        <tag>Supabase</tag>
+        <tag>Auth</tag>
+      </tags>
+      <links>
+        <link label="Lihat kode di GitHub">https://github.com/Muhammad887654/qaf-blog</link>
+      </links>
+    </project>
+
+    <project category="Web">
+      <title>Global Bite</title>
+      <description>Proyek capstone tim berupa aplikasi web rekomendasi kuliner untuk wisatawan. Menggabungkan skor popularitas berbasis machine learning dengan informasi lokasi, alamat, harga, dan merchant agar pengguna dapat menjelajahi rekomendasi hingga detail kuliner.</description>
+      <tags>
+        <tag>Web App</tag>
+        <tag>Machine Learning</tag>
+        <tag>Rekomendasi</tag>
+      </tags>
+      <links>
+        <link label="Lihat kode di GitHub">https://github.com/verglimn/global-bite-clientside</link>
+        <link label="Live Demo">https://global-bite-clientside-main-px1f3jhyi.vercel.app</link>
+        <link label="Server-side">https://github.com/verglimn/global-bite-serverside</link>
+        <link label="API">https://github.com/resi616/global-bite-api</link>
+      </links>
+    </project>
+  </projects>
+
+  <experience>
+    <entry>
+      <period>2024 – Sekarang</period>
+      <title>Posisi / Peran Anda</title>
+      <organization>Nama Perusahaan</organization>
+      <description>Tuliskan pencapaian utama di sini.</description>
+    </entry>
+    <entry>
+      <period>2022 – 2024</period>
+      <title>Posisi Sebelumnya</title>
+      <organization>Nama Organisasi</organization>
+      <description>Tanggung jawab dan hasil yang diraih.</description>
+    </entry>
+    <entry>
+      <period>2019 – 2023</period>
+      <title>Pendidikan</title>
+      <organization>Nama Universitas / Sekolah</organization>
+      <description>Jurusan dan prestasi.</description>
+    </entry>
+  </experience>
+</portfolio>
